@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tim Rogers"]
   spec.email         = ["tim@theroutemap.com"]
 
-  spec.summary       = "Calculate how long it'll take to read a Jekyll post or page"
+  spec.summary       = "Display reading time for a Jekyll post or page"
   spec.homepage      = "https://github.com/routemap/jekyll_reading_time"
   spec.license       = "MIT"
 
@@ -18,9 +18,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r!^exe/!) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "jekyll", "~> 3.5"
+  spec.add_runtime_dependency "jekyll", "~> 4.0.0.pre.beta1"
 
-  spec.add_development_dependency "bundler", "~> 1.16"
+  spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 12.0"
-  spec.add_development_dependency "rubocop", "~> 0.51.0"
+  spec.add_development_dependency "rubocop-jekyll", "~> 0.10"
 end
